@@ -1,0 +1,112 @@
+<div class="row" style="background-color: yellow;padding-top:10x ;">
+    <div class="col-sm-12">
+
+
+        <div class="row" style="text-align: center;margin-top: 10px;">
+        <div class="col-sm-12">
+            <h1>Registration</h1>
+        </div>    
+        </div>
+
+        <div style="background-color: white;">
+
+        <!-- <div class="row" style="padding: 10px;">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">EmployeeId</div>
+            <div class="col-sm-3">
+                <input type="text" placeholder="EmployeeId" class="form-control"/>
+            </div>
+            <div class="col-sm-3"></div>
+        </div> -->
+
+        <div class="row" style="margin-top: 10px;">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">EName</div>
+            <div class="col-sm-3">
+                <input type="text" [(ngModel)]="Emp.eName" placeholder="Enter your Name" class="form-control"/>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+        <div class="row" style="margin-top: 10px;">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">Password</div>
+            <div class="col-sm-3">
+                <input type="password" [(ngModel)]="Emp.password" placeholder="Password" class="form-control"/>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+        <div class="row" style="margin-top: 10px;" >
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">Gender</div>
+            <div class="col-sm-3">
+                <input type="radio" [(ngModel)]="Emp.gender" id="rbtn-male" name="Gender" value="Male">Male
+                <input type="radio" [(ngModel)]="Emp.gender" id="rbtn-female" name="Gender" value="Female">Female
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+        <div class="row" style="margin-top: 10px;" >
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">Phone</div>
+            <div class="col-sm-3">
+                <input type="text" [(ngModel)]="Emp.phone" placeholder="Phone" class="form-control"/>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+        <div class="row" style="margin-top: 10px;">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">Email</div>
+            <div class="col-sm-3">
+                <input type="text" [(ngModel)]="Emp.email" placeholder="Email" class="form-control"/>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+        <div class="row" style="margin-top: 10px;">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">Salary</div>
+            <div class="col-sm-3">
+                <input type="text" [(ngModel)]="Emp.salary" placeholder="Salary" class="form-control"/>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+
+        <div class="row" style="margin-top: 10px;">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">Address</div>
+            <div class="col-sm-3">
+                <input type="text" [(ngModel)]="Emp.address" placeholder="Address" class="form-control"/>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+
+        <div class="row" style="margin-top: 10px;">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">DeptNo</div>
+            <div class="col-sm-3">
+                <select [(ngModel)]="Emp.deptNo" class="form-control">
+                    <option value="0">-Select Option-</option>
+                    <option *ngFor="let dept of DeptList" value="{{dept.deptNo}}">{{dept.dName}}</option>
+                </select>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+
+
+        <div class="row" style="margin-top: 20px;text-align: center;">
+            <div class="col-sm-12">
+                <input type="button" value="Register" class="btn btn-success" (click)="btn_Register()" /> |
+                <input type="button" value="Cancel" class="btn btn-danger" (click)="btn_Cancel()" />
+            </div>
+        </div>
+
+    </div>
+
+
+
+        <br />
+        <br />
+        
+
+
+
+    </div>
+</div>
